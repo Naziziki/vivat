@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vivat</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header-container">
+          <button class="mobile-menu-btn menu-btn-open" type="button">
+            <svg class="mobile-menu-icon">
+              <use href="./images/icons.svg#mobile-menu"></use>
+            </svg>
+          </button>
+          <div class="header-container-logo">
+            <div class="header-container-logo__text logo-text-left">
+              vivat.com
+            </div>
+            <img
+              src="./images/logo.jpeg"
+              class="header-container-logo__image"
+            />
+            <!-- <svg class="header-container-logo__image">
+              <use href="./images/icons.svg#icon-logo"></use>
+            </svg> -->
+            <div class="header-container-logo__text logo-text-right">
+              vivat.com
+            </div>
+          </div>
+          <div class="header-container-link-list">
+            <div class="header-container-link">Main</div>
+            <div class="header-container-link">About company</div>
+            <div class="header-container-link">Blog</div>
+            <div class="header-container-link">FAQ</div>
+            <div class="header-container-link">Contacts</div>
+          </div>
+
+          <!-- Mobile-Menu -->
+          <div class="mobile-menu">
+            <!-- Navigation -->
+            <div class="container">
+              <div class="mobile-menu-nav">
+                <button
+                  type="button"
+                  class="mobile-menu-btn__close menu-btn-close"
+                >
+                  <svg class="mobile-menu-icon__close">
+                    <use href="./images/icons.svg#icon-close"></use>
+                  </svg>
+                </button>
+
+                <div class="mobile-menu-logo">
+                  <div class="mobile-menu-logo__text">vivat.com</div>
+                  <img
+                    src="./images/logo.jpeg"
+                    class="mobile-menu-logo__image"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <script src="./js/mobile-menu.js"></script>
+  </body>
+</html>

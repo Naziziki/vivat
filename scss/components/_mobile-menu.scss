@@ -49,4 +49,22 @@
     width: 32px;
     fill: black;
   }
+  // Link list
+  &-link-list {
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+  }
+  &-link {
+    font-weight: 500;
+    font-size: 32px;
+    text-align: center;
+    transition: color 0.3s ease-in-out;
+  }
+  &-link:hover {
+    color: #819b57;
+  }
 }

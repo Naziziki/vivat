@@ -1,0 +1,82 @@
+.services-section {
+  //   margin-top: 5px;
+}
+
+.s-card {
+  border-radius: 12px;
+  //   min-width: 819px;
+  display: flex;
+  align-items: flex-end;
+  background-size: cover;
+
+  //  Main card
+  &__main {
+    width: 100%;
+    height: 468px;
+    padding: 0 60px 48px;
+    margin-bottom: 10px;
+    @media screen and (min-width: 599px) {
+      height: 360px;
+    }
+    @media screen and (min-width: 899px) {
+      height: 416px;
+    }
+    @media screen and (min-width: 1199px) {
+      height: 468px;
+    }
+
+    background-image: linear-gradient(-180deg, transparent, rgba(0, 0, 0, 0.65)),
+      url(../images/service-main.1.1.jpg);
+    background-position: center bottom;
+
+    &-text {
+      font-size: 36px;
+      font-weight: 500;
+      color: white;
+    }
+  }
+
+  // Minor cards
+  &-list__minor {
+    display: flex;
+    gap: 10px;
+    @media screen and (max-width: 899px) {
+      flex-direction: column;
+    }
+  }
+
+  &__minor-1,
+  &__minor-2 {
+    padding: 0 40px 36px;
+    height: 360px;
+    width: calc((100% - 10px) / 2);
+    border-radius: 12px;
+    flex-wrap: wrap;
+    @media screen and (max-width: 899px) {
+      width: 100%;
+    }
+    @media screen and (min-width: 899px) {
+      height: 320px;
+    }
+    @media screen and (min-width: 1199px) {
+      height: 360px;
+    }
+  }
+  &__minor-1 {
+    background-image: linear-gradient(-180deg, transparent, rgba(0, 0, 0, 0.65)),
+      url(../images/service-minor.1.jpg);
+    background-size: cover;
+  }
+  &__minor-2 {
+    background-image: linear-gradient(-180deg, transparent, rgba(0, 0, 0, 0.65)),
+      url(../images/service-minor.2.jpg);
+    background-size: cover;
+    background-position: center bottom;
+  }
+
+  &__minor-text {
+    font-size: 28px;
+    font-weight: 500;
+    color: white;
+  }
+}
